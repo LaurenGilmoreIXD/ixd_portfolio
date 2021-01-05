@@ -49,6 +49,17 @@ p {
     font-weight: 200;
 }
 
+blockquote{
+    font-size: 2.5em;
+    color: #1E3E5E;
+    font-style: italic;
+    line-height: 1em;
+}
+
+cite{
+    font-size: 1.25em;
+    color: #384141;
+}
 
 header{
     width: 80%;
