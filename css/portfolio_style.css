@@ -1,12 +1,12 @@
 /*----GLOBAL STYLING -----*/
 body{
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'lora', serif;
     font-style: normal;
     color: #384141;
 }
 
 section{
-    width: 80%;
+    width: 60%;
     max-width: 800px;
     margin:auto;
 }
@@ -15,11 +15,14 @@ section{
     margin-bottom: 5em;
 }
 
+div{
+    text-align: left;
+}
 
 /*---TYPOGRAPHY---*/
 
 h1, h2{
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Orbitron', sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -34,7 +37,8 @@ h1 {
 h2{
       font-size: 2.75em;
     margin:1em 0;
-    color: #1E3E5E;
+    color: #323232;
+    padding-left: 1em;
 }
 
 h3{
@@ -45,29 +49,15 @@ h3{
 p {
     font-size: 1.25em;
     line-height: 1.5;
-    margin-bottom:1em;
+    width: 60%;
+    margin-bottom:3em;
     font-weight: 200;
+    margin-left: 8em;
+
 }
 
-blockquote{
-    font-size: 2.5em;
-    color: #1E3E5E;
-    font-style: italic;
-    line-height: 1em;
-}
 
-cite{
-    font-size: 1.25em;
-    color: #384141;
-}
 
-header{
-    width: 80%;
-    font-family:  'Nanum Myeongjo', serif;
-    max-width: 900px;
-    margin: auto;
-    color: #276373;
-}
 
 header h1 {
     margin: 1em 0;
@@ -76,11 +66,13 @@ header h1 {
     line-height: 1.2;
 }
 
-header h2{
-    font-family:  'Nanum Myeongjo', serif;
-    font-size: 2.75em;
+
+
+h3{
+    font-family:  'lora', serif;
+    font-size: 2em;
     line-height: 1.5;
-    padding-bottom: 1em;
+    padding-left:1em;
 }
 
 .highlight {
@@ -127,25 +119,19 @@ a:hover{
 
 /*--- NAVIGATION ---*/
 
+
 nav{
-    top: 0;
-    left: 0;
-    margin: 0%;
     width: 100%;
-    background: #276373;
+    background: #FBFBFB;
     padding: 1em 0;
-    font-size: 0.85em;
 }
 
 nav ul{
     padding-right: 15vw;
-    text-align: right;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 nav ul li{
-    display: inline;
+    display: inline-block;
     margin: 20px;
     background: none;
 }
@@ -163,14 +149,19 @@ nav a:hover{
     transition: all 0.3s ease-in-out;
 }
 
+.monogram{
+    padding-right: 22em;
+}
+
 .logo {
     font-size: 1.8em;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'lora', serif;
     font-weight: bold;
     text-align: left;
     text-transform: none;
     padding-right: 30vw;
 }
+
 
 
 /*---IMAGES---*/
@@ -180,54 +171,33 @@ img{
     max-width: 100%;
 }
 
+
+
 /*-----BACKGROUNDS-----*/
 .background-colour{
     padding: 4em 0;
-    background: #CFCFCF;
+    background: #F3F3F3;
     color: #262c2c;
 }
 
 /*----FOOTER-----*/
 
+
 footer{
-    text-align: center;
     font-size: 0.707;
-    padding: 2em 0 8em 0;
-    margin:auto;
-    color: #CFCFCF;
-    background: #1C4C52;
+    padding: 0 0 0 0;
+    text-align:center;
+    line-height: 10px;
+    color: #5A4495;
+    background: #FBFBFB;
 }
 
-.connections{
-    position: relative;
-    margin:0 auto;
-}
-
-.connections ul{
-    margin:0;
-    padding:0;
-}
-
-.connections li{
-    margin: 0 10px;
-    padding: 0%;
-    list-style: none;
+footer div ul {
     display: inline-block;
+
 }
 
-.connections a:link{
-    border-bottom: none;
-}
 
-.connections img,
-.connections svg{
-    border: none;
-}
-
-.connections a:hover svg path{
-    fill: #1E3E5E;
-    transition: all 0.3s ease-in-out;
-}
 
 @media only screen and (max-width:600px){
     section{
@@ -247,3 +217,4 @@ header h1{
 .portfolio{
     grid-template-columns: repeat(2, minmax(150px,fr))
 }
+
