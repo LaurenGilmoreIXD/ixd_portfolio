@@ -192,10 +192,13 @@ footer{
     background: #FBFBFB;
 }
 
-footer div ul {
+footer div {
     display: inline-block;
+    text-align: center;
 
 }
+
+
 
 
 
